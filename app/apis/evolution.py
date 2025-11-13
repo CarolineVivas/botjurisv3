@@ -15,9 +15,6 @@ load_dotenv()
 host = os.getenv("HOST_API")
 api_key = os.getenv("API_KEY")
 
-host = "https://evolution-evolution-api.3r9t5q.easypanel.host/"
-api_key = "429683C4C977415CAAFCCE10F7D57E11"
-
 def processar_imagem(instance:str, message_id:str, ia_infos) -> str:
     print("Processar imagem")
     imagem_transcript = "imagem enviada: não consegui transcrever essa imagem. fale para o usuário que sua internet está ruim e que não pode baixar a imagem."
