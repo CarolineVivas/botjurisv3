@@ -17,8 +17,8 @@ from app.service.queue_manager import start_worker, stop_worker
 # ============================================================
 # 🌎 Seleção dinâmica do ambiente
 # ============================================================
-env_file = ".env.prod" if os.getenv("ENV") == "prod" else ".env.dev"
-settings = Settings(_env_file=env_file)
+from app.core.config import get_settings
+settings = get_settings()
 
 log = get_logger()
 
