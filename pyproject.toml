@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatbot-evolution"
+version = "0.1.0"
+description = "Backend FastAPI para integração com Evolution API e IA"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "SQLAlchemy",
+    "redis",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "httpx",
+    "black",
+    "ruff",
+    "mypy",
+    "pre-commit",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+exclude = ["migrations", ".venv", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]  # já tratamos com black
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_configs = true
+ignore_missing_imports = true
+disallow_untyped_defs = false
+exclude = [
+  "migrations",
+  "tests",
+]
+

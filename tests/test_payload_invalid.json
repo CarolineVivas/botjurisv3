@@ -1,0 +1,16 @@
+{
+  "instance": "BotJuris",
+  "sender": "5561987654321@wa.me",
+  "data": {
+    "key": {
+      "remoteJid": "abc@s.whatsapp.net",  
+      "fromMe": false,
+      "id": "ABC123XYZ987"
+    },
+    "messageType": "conversation",
+    "message": {
+      "conversation": "Teste inválido"
+    },
+    "pushName": "Caroline"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "instance": "BotJuris",
+  "sender": "5561987654321@wa.me",
+  "data": {
+    "key": {
+      "remoteJid": "5584998765432@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ABC123XYZ987"
+    },
+    "messageType": "conversation",
+    "message": {
+      "conversation": "Olá, quero saber sobre meus direitos trabalhistas."
+    },
+    "pushName": "Caroline"
+  }
+}
+

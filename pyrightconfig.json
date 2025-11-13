@@ -1,0 +1,6 @@
+{
+  "typeCheckingMode": "off",
+  "include": ["app"],
+  "reportMissingImports": "none",
+  "python.analysis.extraPaths": ["./app"]
+}

@@ -1,0 +1,27 @@
+# Core do backend
+fastapi
+uvicorn
+
+# Banco de dados
+SQLAlchemy
+psycopg2-binary
+
+# Manipulação de ambiente e arquivos
+python-dotenv
+orjson
+pydub
+rich
+regex
+
+# Bibliotecas de NLP e IA
+spacy
+langchain
+langchain-openai
+openai
+tiktoken
+
+# Utilidades extras
+httpx
+requests
+pydantic
+

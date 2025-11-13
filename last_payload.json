@@ -1,0 +1,37 @@
+{
+    "event": "messages.upsert",
+    "instance": "OnlyZap_ccba5a5d-417c-4b9e-9751-d8e1efa0b80e",
+    "data": {
+        "key": {
+            "remoteJid": "351911172781@s.whatsapp.net",
+            "fromMe": false,
+            "id": "3EB054D8D05101CDBAF593"
+        },
+        "pushName": "Matheus Gama | Eng. Soft",
+        "status": "DELIVERY_ACK",
+        "message": {
+            "conversation": "Opa",
+            "messageContextInfo": {
+                "deviceListMetadata": {
+                    "senderKeyHash": "AqewJEcHvGOmxw==",
+                    "senderTimestamp": "1755020098",
+                    "senderAccountType": "E2EE",
+                    "receiverAccountType": "E2EE",
+                    "recipientKeyHash": "0ZXah1bbgH50Eg==",
+                    "recipientTimestamp": "1754064272"
+                },
+                "deviceListMetadataVersion": 2,
+                "messageSecret": "R8D9jAySdnBopc4uJdgTYuykKwZ7Fj4K5cOizlT5XBs="
+            }
+        },
+        "messageType": "conversation",
+        "messageTimestamp": 1755029345,
+        "instanceId": "a702afe3-9097-464c-94ad-3a48e7e52c6e",
+        "source": "web"
+    },
+    "destination": "https://ff741a0db408.ngrok-free.app/webhook",
+    "date_time": "2025-08-12T17:09:06.098Z",
+    "sender": "558587234490@s.whatsapp.net",
+    "server_url": "https://evolution-evolution-api.2f1c8a.easypanel.host",
+    "apikey": "1036B62D-7B0A-4EA0-B054-20AE160884C3"
+}

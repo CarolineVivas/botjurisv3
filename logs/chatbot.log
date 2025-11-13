@@ -1,0 +1,1417 @@
+2025-11-04 18:41:00 | INFO | Teste de logging estruturado
+2025-11-12 10:58:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 10:58:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:08:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:08:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:10:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:10:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:30 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:30 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:17:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:31 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:25:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:25:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:29 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 11:59:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 11:59:35 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:13 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:04:27 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:27 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:04:33 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 12:08:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:36 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 12:08:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:48 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:22:59 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:22:59 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:04 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:23:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:23:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:36 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:40 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:41 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:50 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 15:37:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:37:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:38:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:38:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:38:55 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:38:55 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:39:11 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:39:11 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:42:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:42:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 15:49:38 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:56 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:19:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:11 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:20:12 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:12 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:20:19 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:21:45 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:45 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:21:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:43 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:29:45 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:45 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:29:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:30:53 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:31:11 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:11 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:11 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:52 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.main:startup_event:53 - 🌎 Ambiente: development
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:31:13 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:27 | INFO | app.main:shutdown_event:58 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:33:29 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:29 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:worker_loop:212 - 🚀 Worker de queue iniciado
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:33:34 | INFO | app.service.queue_manager:start_worker:258 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:50 | INFO | app.service.queue_manager:stop_worker:274 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:worker_loop:235 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.service.queue_manager:stop_worker:277 - ✅ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:51 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-12 17:37:52 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:52 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-12 17:37:58 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:34 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:38 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:43:44 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:43:44 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:01 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:07 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:17 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:18 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:18 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:22 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:43 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:44:49 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:49 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:44:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:48 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:50 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:53 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:45:58 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:00 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:00 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:03 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:57 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:46:59 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:47:00 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:00 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:04 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:05 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:05 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+ de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:47:08 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:26 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:29 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:49:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:31 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:49:34 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.main:lifespan:41 - 🛑 Encerrando aplicação com graceful shutdown...
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:22 | INFO | app.service.queue_manager:stop_worker:330 - 🛑 Solicitação de graceful shutdown do worker recebida.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:worker_loop:295 - 🛑 Worker de queue finalizado (graceful shutdown concluído)
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.service.queue_manager:stop_worker:336 - ✅ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:43 - ✔ Worker finalizado.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:27 | INFO | app.main:lifespan:44 - 🔴 Aplicação encerrada com segurança.
+2025-11-13 15:55:28 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:28 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:32 - 🚀 BotJuris (Dev) iniciado com sucesso!
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.main:lifespan:33 - 🌍 Ambiente: development
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.core.cache:init_cache:25 - ✅ Redis conectado com sucesso.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:worker_loop:270 - 🚀 Worker de queue iniciado
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
+2025-11-13 15:55:32 | INFO | app.service.queue_manager:start_worker:318 - 👷 Worker iniciado em thread de background.
