@@ -1,5 +1,16 @@
-venv/
+# ENV FILES
+.env
+.env.*
+*.env
+
+# LOGS
+logs/
+*.log
+
+# JSON sensíveis
+last_payload.json
+send_message.json
+
+# Pycache
 __pycache__/
 *.pyc
-.env
-.env*
