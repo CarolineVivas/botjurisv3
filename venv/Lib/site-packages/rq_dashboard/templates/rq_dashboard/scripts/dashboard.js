@@ -132,7 +132,7 @@ var modalConfirm = function(action, cb) {
         if (err) {
             return;
         }
-        
+
         $.each(instances, function(i, instance) {
             $rqInstances.append($('<option>', {
                 value: i,

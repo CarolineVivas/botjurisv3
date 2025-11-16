@@ -19,3 +19,6 @@ __pycache__/
 test_*.json
 last_payload.json
 send_message.json
+
+echo venv/ >> .gitignore
+echo .venv/ >> .gitignore

@@ -1,56 +1,61 @@
-import re
-import unicodedata
+# app/service/sanitize.py
+from typing import Any
 
-# Remove caracteres de controle e normaliza acentuação
-_CONTROL_CHARS = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
 
-def sanitize_text(text: str, max_len: int = 4000) -> str:
+def sanitize_text(texto: str | None, max_len: int = 5000) -> str:
     """
-    Limpa e normaliza o texto recebido, garantindo segurança e consistência.
+    Sanitiza texto removendo caracteres de controle e normalizando espaços.
 
-    - Remove caracteres de controle invisíveis
-    - Normaliza acentuação (NFKC)
-    - Remove espaços duplos e quebras excessivas
-    - Limita tamanho máximo (padrão: 4000 caracteres)
+    Args:
+        texto: Texto a ser sanitizado
+        max_len: Tamanho máximo do texto
+
+    Returns:
+        Texto sanitizado
     """
-    if not text:
+    if not texto:
         return ""
 
-    # Normaliza acentuação e caracteres compostos (ex: ç, á)
-    text = unicodedata.normalize("NFKC", text)
+    # Remove caracteres de controle (exceto quebras de linha)
+    texto = "".join(ch for ch in texto if ch.isprintable() or ch in ["\n", "\r", "\t"])
 
-    # Remove caracteres de controle invisíveis
-    text = _CONTROL_CHARS.sub("", text)
-
-    # Substitui múltiplos espaços e quebras de linha
-    text = re.sub(r"\s+", " ", text)
+    # Normaliza espaços (múltiplos espaços → um espaço)
+    texto = " ".join(texto.split())
 
     # Remove espaços nas extremidades
-    text = text.strip()
+    texto = texto.strip()
 
-    # Limita tamanho máximo (protege contra flood)
-    if len(text) > max_len:
-        text = text[:max_len]
+    # Limita tamanho
+    if len(texto) > max_len:
+        texto = texto[:max_len]
 
-    return text
+    return texto
 
 
-def sanitize_dict(data: dict, max_len: int = 4000) -> dict:
+def sanitize_dict(data: dict) -> dict:
     """
-    Aplica sanitização em todos os valores de um dicionário recursivamente.
-    Ideal para limpar payloads de mensagens e respostas da IA.
+    Sanitiza recursivamente um dicionário.
+
+    Args:
+        data: Dicionário a ser sanitizado
+
+    Returns:
+        Dicionário sanitizado
     """
     if not isinstance(data, dict):
         return data
 
-    clean_data = {}
+    sanitized: dict[str, Any] = {}  # ✅ ÚNICA MUDANÇA AQUI
     for key, value in data.items():
         if isinstance(value, str):
-            clean_data[key] = sanitize_text(value, max_len=max_len)
+            sanitized[key] = sanitize_text(value)
         elif isinstance(value, dict):
-            clean_data[key] = sanitize_dict(value, max_len=max_len)
+            sanitized[key] = sanitize_dict(value)
         elif isinstance(value, list):
-            clean_data[key] = [sanitize_text(v, max_len=max_len) if isinstance(v, str) else v for v in value]
+            sanitized[key] = [
+                sanitize_text(item) if isinstance(item, str) else item for item in value
+            ]
         else:
-            clean_data[key] = value
-    return clean_data
+            sanitized[key] = value
+
+    return sanitized

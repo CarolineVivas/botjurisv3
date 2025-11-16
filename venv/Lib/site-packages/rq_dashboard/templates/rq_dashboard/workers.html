@@ -32,7 +32,7 @@
             <td <% if (d.version && d.python_version) { %>title ="RQ <%= d.version %> / Python <%= d.python_version %>" <% } %>>
                 <%= d.name %>
             </td>
-            
+
             <% if (d.current_job !== 'idle') { %>
             <td title="Job ID: <%= d.current_job.job_id %>&#013;&#010;Description: <% if (d.current_job.description){ %> <%- d.current_job.description %> <% } %>&#013;&#010;Created at: <%= toRelative(d.current_job.created_at) %>&#013;&#010;">
                 <a href="<%= url_for_single_job_view(d.current_job.job_id) %>">
