@@ -6,10 +6,13 @@ seguindo princípios de Inversion of Control e facilitando testes.
 """
 
 from typing import Generator
+
 from sqlalchemy.orm import Session
+
+from app.core.cache import CacheService, get_cache
+from app.core.logger_config import get_logger
 from app.database.connection import SessionLocal
 from app.database.repositories import IARepository, LeadRepository
-from app.core.logger_config import get_logger
 
 log = get_logger()
 
@@ -94,3 +97,21 @@ def get_lead_repository(db: Session = None) -> LeadRepository:
         db = SessionLocal()
 
     return LeadRepository(db)
+
+
+def get_cache_service() -> CacheService:
+    """
+    Fornece uma instância do CacheService.
+
+    Returns:
+        CacheService: Serviço de cache Redis
+
+    Usage:
+        ```python
+        def my_endpoint(
+            cache: CacheService = Depends(get_cache_service)
+        ):
+            cache.set("key", "value", ttl=300)
+        ```
+    """
+    return get_cache()

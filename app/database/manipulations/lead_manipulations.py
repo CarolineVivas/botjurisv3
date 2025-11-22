@@ -1,7 +1,9 @@
 from typing import Optional
-from ..models import Lead
-from ..connection import init_db
+
 from app.core.logger_config import get_logger
+
+from ..connection import init_db
+from ..models import Lead
 
 log = get_logger()
 
@@ -9,7 +11,7 @@ log = get_logger()
 def filter_lead(phone: str, message: dict) -> Optional[Lead]:
     db = init_db()
     if not db:
-        raise(Exception("Não consegui conectar com database"))
+        raise (Exception("Não consegui conectar com database"))
 
     try:
         lead = db.query(Lead).filter(Lead.phone == phone).first()
@@ -40,7 +42,7 @@ def filter_lead(phone: str, message: dict) -> Optional[Lead]:
 def update_lead(lead_id: int, message: list, resume: str) -> bool:
     db = init_db()
     if not db:
-            raise(Exception("Não consegui conectar com database"))
+        raise (Exception("Não consegui conectar com database"))
 
     try:
         lead = db.query(Lead).filter(Lead.id == lead_id).first()
@@ -74,21 +76,18 @@ def update_lead(lead_id: int, message: list, resume: str) -> bool:
 def new_lead(ia_id: int, phone: str, name: str, message: list) -> Optional[Lead]:
     db = init_db()
     if not db:
-        raise(Exception("Não consegui conectar com database"))
+        raise (Exception("Não consegui conectar com database"))
 
     try:
-        lead = Lead(
-            ia_id=ia_id,
-            phone=phone,
-            name=name,
-            message=message
-        )
+        lead = Lead(ia_id=ia_id, phone=phone, name=name, message=message)
 
         db.add(lead)
         db.commit()
         db.refresh(lead)
 
-        log.info(f"Novo Lead [id: {lead.id}, Nome: {lead.name}] da IA {lead.ia_id} adicionado com sucesso!")
+        log.info(
+            f"Novo Lead [id: {lead.id}, Nome: {lead.name}] da IA {lead.ia_id} adicionado com sucesso!"
+        )
 
         return lead
 

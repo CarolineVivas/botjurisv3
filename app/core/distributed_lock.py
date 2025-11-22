@@ -10,7 +10,6 @@ import redis
 
 from app.core.logger_config import get_logger
 
-
 log = get_logger()
 
 
@@ -115,4 +114,3 @@ class DistributedLock(AbstractContextManager):
 
     def __exit__(self, exc_type, exc, tb) -> None:
         self.release()
-

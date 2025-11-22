@@ -1,23 +1,22 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from contextlib import asynccontextmanager
-import os
 
-from app.middleware.error_handler import register_exception_handlers
-from app.core.logger_config import get_logger
-from app.core.config import Settings
 from app.core.cache import init_cache
+
+# ============================================================
+# 🌎 Seleção dinâmica do ambiente
+# ============================================================
+from app.core.config import get_settings
+from app.core.logger_config import get_logger
+from app.middleware.error_handler import register_exception_handlers
 from app.middleware.rate_limit import RateLimitMiddleware
 from app.middleware.security import SignatureValidationMiddleware
 from app.middleware.security_headers import SecurityHeadersMiddleware
 from app.routers import webhook
 from app.service.queue_manager import start_worker, stop_worker
 
-
-# ============================================================
-# 🌎 Seleção dinâmica do ambiente
-# ============================================================
-from app.core.config import get_settings
 settings = get_settings()
 
 log = get_logger()
@@ -32,14 +31,14 @@ async def lifespan(app: FastAPI):
     log.info(f"🚀 {settings.APP_NAME} iniciado com sucesso!")
     log.info(f"🌍 Ambiente: {settings.ENVIRONMENT}")
 
-    init_cache()          # inicia Redis cache
-    start_worker(True)    # inicia queue worker em background
+    init_cache()  # inicia Redis cache
+    start_worker(True)  # inicia queue worker em background
 
     yield
 
     # 🔴 Shutdown
     log.info("🛑 Encerrando aplicação com graceful shutdown...")
-    stop_worker()          # encerra worker de forma segura
+    stop_worker()  # encerra worker de forma segura
     log.info("✔ Worker finalizado.")
     log.info("🔴 Aplicação encerrada com segurança.")
 
@@ -61,8 +60,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://evolution-api.com",   # ajuste para o domínio real
-        "http://localhost:3000",       # para desenvolvimento
+        "https://evolution-api.com",  # ajuste para o domínio real
+        "http://localhost:3000",  # para desenvolvimento
     ],
     allow_credentials=True,
     allow_methods=["*"],

@@ -5,16 +5,17 @@ Responsável por interagir com modelos de linguagem (OpenAI)
 para gerar respostas e resumos de conversas.
 """
 
-from typing import List, Dict, Any, Optional
-from langchain.memory import ConversationBufferWindowMemory
-from langchain_openai.chat_models import ChatOpenAI
-from langchain.chains.conversation.base import ConversationChain
-from langchain.prompts import PromptTemplate
+from typing import Any, Dict, List, Optional
 
-from app.service.cache_service import get_cache, set_cache
-from app.config.prompts import PromptTemplates
+from langchain.chains.conversation.base import ConversationChain
+from langchain.memory import ConversationBufferWindowMemory
+from langchain.prompts import PromptTemplate
+from langchain_openai.chat_models import ChatOpenAI
+
 from app.config.messages import MessageTemplates
+from app.config.prompts import PromptTemplates
 from app.core.logger_config import get_logger
+from app.service.cache_service import get_cache, set_cache
 
 log = get_logger()
 
@@ -30,11 +31,7 @@ class LLMService:
     """
 
     def __init__(
-        self,
-        api_key: str,
-        model: str,
-        system_prompt: str,
-        resume: Optional[str] = None
+        self, api_key: str, model: str, system_prompt: str, resume: Optional[str] = None
     ):
         """
         Inicializa o serviço LLM.
@@ -51,9 +48,7 @@ class LLMService:
         self.resume = resume
 
     def generate_response(
-        self,
-        user_message: str,
-        history: List[Dict[str, Any]] = None
+        self, user_message: str, history: List[Dict[str, Any]] = None
     ) -> str:
         """
         Gera resposta da IA para mensagem do usuário.
@@ -77,8 +72,7 @@ class LLMService:
 
             # Cria chain de conversação
             conversation = self._create_conversation_chain(
-                prompt_text,
-                MessageTemplates.CONVERSATION_MEMORY_WINDOW
+                prompt_text, MessageTemplates.CONVERSATION_MEMORY_WINDOW
             )
 
             # Alimenta memória com histórico
@@ -95,10 +89,7 @@ class LLMService:
             log.error(f"Erro ao processar resposta: {ex}", exc_info=True)
             return ""
 
-    def generate_resume(
-        self,
-        history: List[Dict[str, Any]] = None
-    ) -> Optional[str]:
+    def generate_resume(self, history: List[Dict[str, Any]] = None) -> Optional[str]:
         """
         Gera resumo do histórico de conversação.
 
@@ -114,16 +105,11 @@ class LLMService:
         try:
             # Cria chain específica para resumo
             conversation = self._create_conversation_chain(
-                PromptTemplates.RESUME_GENERATION,
-                MessageTemplates.RESUME_MEMORY_WINDOW
+                PromptTemplates.RESUME_GENERATION, MessageTemplates.RESUME_MEMORY_WINDOW
             )
 
             # Alimenta memória com histórico
-            self._feed_memory(
-                conversation,
-                history,
-                PromptTemplates.RESUME_REQUEST
-            )
+            self._feed_memory(conversation, history, PromptTemplates.RESUME_REQUEST)
 
             # Gera resumo
             log.debug(f"Total de interações para resumo: {len(history)}")
@@ -150,15 +136,15 @@ class LLMService:
         if self.resume:
             log.info("Resumo localizado, incluindo no contexto")
             # Adiciona resumo ao system prompt
-            resume_context = f"\nresumo de todas as interações que teve com este lead: {self.resume}"
+            resume_context = (
+                f"\nresumo de todas as interações que teve com este lead: {self.resume}"
+            )
             return self.system_prompt + resume_context + "\n" + base_prompt
 
         return self.system_prompt + "\n" + base_prompt
 
     def _create_conversation_chain(
-        self,
-        prompt_template: str,
-        memory_window: int
+        self, prompt_template: str, memory_window: int
     ) -> ConversationChain:
         """
         Cria uma chain de conversação com LangChain.
@@ -174,17 +160,13 @@ class LLMService:
         memory = ConversationBufferWindowMemory(k=memory_window)
         template = PromptTemplate.from_template(prompt_template)
 
-        return ConversationChain(
-            llm=chat,
-            memory=memory,
-            prompt=template
-        )
+        return ConversationChain(llm=chat, memory=memory, prompt=template)
 
     def _feed_memory(
         self,
         conversation: ConversationChain,
         history: List[Dict[str, Any]],
-        current_message: str
+        current_message: str,
     ) -> None:
         """
         Alimenta a memória da conversação com histórico.
@@ -218,7 +200,9 @@ class IAresponse(LLMService):
     DEPRECATED: Use LLMService diretamente.
     """
 
-    def __init__(self, api_key: str, ia_model: str, system_prompt: str, resume_lead: str = ""):
+    def __init__(
+        self, api_key: str, ia_model: str, system_prompt: str, resume_lead: str = ""
+    ):
         """Construtor legacy."""
         super().__init__(api_key, ia_model, system_prompt, resume_lead or None)
 
@@ -250,7 +234,7 @@ def get_response_from_ai(user_message: str, user_id: str) -> str:
     llm = LLMService(
         api_key=getenv("OPENAI_API_KEY"),
         model="gpt-4o-mini",
-        system_prompt="Você é uma assistente jurídica do BotJuris."
+        system_prompt="Você é uma assistente jurídica do BotJuris.",
     )
 
     response = llm.generate_response(user_message)

@@ -2,10 +2,12 @@
 Repository para gerenciamento de Leads no banco de dados.
 """
 
-from typing import Optional, List, Dict, Any
+from typing import Any, Dict, List, Optional
+
 from sqlalchemy.orm import Session
-from app.database.models import Lead
+
 from app.core.logger_config import get_logger
+from app.database.models import Lead
 
 log = get_logger()
 
@@ -75,11 +77,7 @@ class LeadRepository:
             raise
 
     def create(
-        self,
-        ia_id: int,
-        phone: str,
-        name: str,
-        message: List[Dict[str, Any]]
+        self, ia_id: int, phone: str, name: str, message: List[Dict[str, Any]]
     ) -> Lead:
         """
         Cria um novo lead.
@@ -98,12 +96,7 @@ class LeadRepository:
             para permitir transações apropriadas.
         """
         try:
-            lead = Lead(
-                ia_id=ia_id,
-                phone=phone,
-                name=name,
-                message=message
-            )
+            lead = Lead(ia_id=ia_id, phone=phone, name=name, message=message)
 
             self.db.add(lead)
             self.db.flush()  # Flush para obter o ID sem fazer commit
@@ -141,16 +134,12 @@ class LeadRepository:
 
         except Exception as ex:
             log.error(
-                f"Erro ao adicionar mensagem ao lead {lead.id}: {ex}",
-                exc_info=True
+                f"Erro ao adicionar mensagem ao lead {lead.id}: {ex}", exc_info=True
             )
             raise
 
     def update_with_response(
-        self,
-        lead: Lead,
-        response: Dict[str, Any],
-        resume: Optional[str] = None
+        self, lead: Lead, response: Dict[str, Any], resume: Optional[str] = None
     ) -> None:
         """
         Atualiza lead com resposta da IA e opcionalmente com resumo.
@@ -176,13 +165,10 @@ class LeadRepository:
 
             self.db.flush()
 
-            log.info(
-                f"Lead {lead.id} ({lead.name}) atualizado com resposta da IA"
-            )
+            log.info(f"Lead {lead.id} ({lead.name}) atualizado com resposta da IA")
 
         except Exception as ex:
             log.error(
-                f"Erro ao atualizar lead {lead.id} com resposta: {ex}",
-                exc_info=True
+                f"Erro ao atualizar lead {lead.id} com resposta: {ex}", exc_info=True
             )
             raise

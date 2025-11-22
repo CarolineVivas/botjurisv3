@@ -3,15 +3,17 @@
 import json
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
-from typing import Any, Dict, Optional, Callable
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FuturesTimeoutError
+from typing import Any, Callable, Dict, Optional
 
 import redis
 
-from app.core.logger_config import get_logger
 from app.core.distributed_lock import DistributedLock, get_redis_client
-from app.service.process import process_webhook_data  # garante que esse nome está correto
-
+from app.core.logger_config import get_logger
+from app.service.process import (
+    process_webhook_data,  # garante que esse nome está correto
+)
 
 log = get_logger()
 
@@ -20,7 +22,7 @@ log = get_logger()
 # ======================================================
 
 QUEUE_KEY = "queue:webhook"
-QUEUE_DLQ_KEY = "queue:webhook:dlq"   # Dead Letter Queue
+QUEUE_DLQ_KEY = "queue:webhook:dlq"  # Dead Letter Queue
 
 DEFAULT_TIMEOUT_SECONDS = 30
 REDIS_RECONNECT_DELAY = 5  # segundos
@@ -44,6 +46,7 @@ def get_redis() -> redis.Redis:
 # ======================================================
 # 🧠 Circuit Breaker
 # ======================================================
+
 
 class CircuitBreaker:
     """
@@ -105,11 +108,15 @@ class CircuitBreaker:
     def _on_failure(self) -> None:
         self.failure_count += 1
         self.last_failure_time = time.time()
-        log.warning(f"⚠️ CircuitBreaker falha #{self.failure_count} (estado={self.state})")
+        log.warning(
+            f"⚠️ CircuitBreaker falha #{self.failure_count} (estado={self.state})"
+        )
 
         if self.failure_count >= self.failure_threshold and self.state != "OPEN":
             self.state = "OPEN"
-            log.error("🔴 CircuitBreaker em estado OPEN — novas chamadas serão bloqueadas.")
+            log.error(
+                "🔴 CircuitBreaker em estado OPEN — novas chamadas serão bloqueadas."
+            )
 
     def call(self, func: Callable, *args, **kwargs):
         """
@@ -136,6 +143,7 @@ circuit_breaker = CircuitBreaker()
 # ⏱ Timeout helper
 # ======================================================
 
+
 def run_with_timeout(
     func: Callable,
     timeout: int,
@@ -155,6 +163,7 @@ def run_with_timeout(
 # ======================================================
 # 🔁 Funções de fila
 # ======================================================
+
 
 def enqueue_webhook(payload: Dict[str, Any]) -> None:
     """
@@ -249,7 +258,9 @@ def _process_item(raw: str) -> None:
             # Lock distribuído por telefone
             client = get_redis()
             with DistributedLock(client, lock_name, ttl=60, blocking_timeout=10):
-                circuit_breaker.call(run_with_timeout, _do_process, DEFAULT_TIMEOUT_SECONDS)
+                circuit_breaker.call(
+                    run_with_timeout, _do_process, DEFAULT_TIMEOUT_SECONDS
+                )
         else:
             # Sem telefone — processa mesmo assim, mas loga
             log.warning("📵 Não foi possível extrair lead_phone para lock distribuído.")
@@ -284,7 +295,9 @@ def worker_loop() -> None:
             except Exception as ex:
                 # Em princípio, qualquer erro tratado dentro de _process_item
                 # não deveria chegar aqui, mas mantemos como fallback.
-                log.error(f"❌ Erro inesperado ao processar item da fila: {ex}", exc_info=True)
+                log.error(
+                    f"❌ Erro inesperado ao processar item da fila: {ex}", exc_info=True
+                )
 
         except (redis.ConnectionError, redis.TimeoutError) as ex:
             log.error(f"🔌 Erro de conexão com Redis: {ex}")
@@ -298,6 +311,7 @@ def worker_loop() -> None:
 # ======================================================
 # 📴 Controle de start/stop (graceful shutdown)
 # ======================================================
+
 
 def start_worker(in_background: bool = True) -> None:
     """

@@ -1,7 +1,8 @@
-from app.core.cache import redis_client
-from app.core.logger_config import get_logger
 import json
 from typing import Optional
+
+from app.core.cache import redis_client
+from app.core.logger_config import get_logger
 
 log = get_logger()
 CACHE_EXPIRATION = 3600  # ⏱️ 1 hora padrão

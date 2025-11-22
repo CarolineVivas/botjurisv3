@@ -1,7 +1,9 @@
 from typing import Optional
-from ..models import IA
-from ..connection import SessionLocal
+
 from app.core.logger_config import get_logger
+
+from ..connection import SessionLocal
+from ..models import IA
 
 log = get_logger()
 
@@ -10,7 +12,7 @@ def filter_ia(phone: str) -> Optional[IA]:
     db = SessionLocal()
 
     if not db:
-        raise(Exception("Não consegui conectar com databse"))
+        raise (Exception("Não consegui conectar com databse"))
 
     try:
         ia = db.query(IA).filter(IA.phone_number == phone).first()

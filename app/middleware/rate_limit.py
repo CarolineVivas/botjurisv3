@@ -1,7 +1,8 @@
-from typing import Dict, List
-from fastapi import Request, HTTPException
-from starlette.middleware.base import BaseHTTPMiddleware
 import time
+from typing import Dict, List
+
+from fastapi import HTTPException, Request
+from starlette.middleware.base import BaseHTTPMiddleware
 
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
@@ -18,11 +19,14 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         if client_ip not in self.request_log:
             self.request_log[client_ip] = []
         # Filtra requisições dentro da janela de tempo
-        recent_requests = [t for t in self.request_log[client_ip] if t > now - self.window_seconds]
+        recent_requests = [
+            t for t in self.request_log[client_ip] if t > now - self.window_seconds
+        ]
         self.request_log[client_ip] = recent_requests
 
         if len(recent_requests) >= self.max_requests:
             from app.core.logger_config import get_logger
+
             logger = get_logger()
             logger.warning(f"Rate limit excedido para IP: {client_ip}")
             raise HTTPException(status_code=429, detail="Too many requests")

@@ -1,7 +1,8 @@
-import os
 import json
-from dotenv import load_dotenv
+import os
+
 from cryptography.fernet import Fernet, InvalidToken
+from dotenv import load_dotenv
 
 # ✅ Carrega variáveis do ambiente (.env)
 load_dotenv()
@@ -16,6 +17,7 @@ try:
 except Exception as e:
     raise ValueError(f"❌ Erro ao inicializar Fernet: {e}")
 
+
 # 🔒 Encripta qualquer dicionário Python em string segura
 def encrypt_data(data: dict) -> str:
     try:
@@ -24,6 +26,7 @@ def encrypt_data(data: dict) -> str:
         return encrypted_data
     except Exception as e:
         raise ValueError(f"Erro ao criptografar dados: {e}")
+
 
 # 🔓 Desencripta a string e retorna o dicionário original
 def decrypt_data(encrypted_str: str) -> dict:
@@ -36,9 +39,11 @@ def decrypt_data(encrypted_str: str) -> dict:
     except Exception as e:
         raise ValueError(f"Erro ao descriptografar dados: {e}")
 
+
 # 🔧 Teste rápido opcional (somente se rodar standalone)
 if __name__ == "__main__":
     from app.core.logger_config import get_logger
+
     log = get_logger()
 
     data_encrypted = encrypt_data({"teste": "teste"})

@@ -1,10 +1,21 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, JSON, Boolean, Index
+from sqlalchemy import (
+    JSON,
+    Boolean,
+    Column,
+    DateTime,
+    ForeignKey,
+    Index,
+    Integer,
+    String,
+    func,
+)
 from sqlalchemy.ext.mutable import MutableList
-from sqlalchemy import func
-from sqlalchemy.orm import relationship, declarative_base
+from sqlalchemy.orm import declarative_base, relationship
+
 from app.service.crypto import decrypt_data
 
 Base = declarative_base()
+
 
 class IA(Base):
     __tablename__ = "ias"
@@ -13,16 +24,21 @@ class IA(Base):
     phone_number = Column(String(20), nullable=False, unique=True)
     status = Column(Boolean, nullable=False, default=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    updated_at = Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
 
     prompts = relationship("Prompt", back_populates="ia", lazy="selectin")
-    ia_config = relationship("IAConfig", back_populates="ia", uselist=False, lazy="joined")
+    ia_config = relationship(
+        "IAConfig", back_populates="ia", uselist=False, lazy="joined"
+    )
     leads = relationship("Lead", back_populates="ia", lazy="selectin")
 
     @property
     def active_prompts(self):
         active = [p for p in self.prompts if p.is_active]
         return active[0] if active else None
+
 
 Index("idx_ia_phone_status", IA.phone_number, IA.status)
 
@@ -35,7 +51,9 @@ class IAConfig(Base):
     ai_api = Column(String(100), nullable=False)
     encrypted_credentials = Column(String, nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    updated_at = Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
     ia = relationship("IA", back_populates="ia_config", lazy="joined")
 
     @property
@@ -50,7 +68,9 @@ class Prompt(Base):
     prompt_text = Column(String, nullable=False)
     is_active = Column(Boolean, default=False, nullable=False, index=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    updated_at = Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
     ia = relationship("IA", back_populates="prompts", lazy="selectin")
 
 
@@ -63,5 +83,7 @@ class Lead(Base):
     message = Column(MutableList.as_mutable(JSON), nullable=False)
     resume = Column(String)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    updated_at = Column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
     ia = relationship("IA", back_populates="leads", lazy="joined")

@@ -3,9 +3,11 @@ Repository para gerenciamento de IAs no banco de dados.
 """
 
 from typing import Optional
+
 from sqlalchemy.orm import Session
-from app.database.models import IA
+
 from app.core.logger_config import get_logger
+from app.database.models import IA
 
 log = get_logger()
 

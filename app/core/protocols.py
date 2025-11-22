@@ -5,7 +5,8 @@ Usando typing.Protocol para definir interfaces sem herança, permitindo
 duck typing e facilitando testes com mocks.
 """
 
-from typing import Protocol, Optional, List, Dict, Any
+from typing import Any, Dict, List, Optional, Protocol
+
 from app.database.models import IA, Lead
 
 
@@ -33,11 +34,7 @@ class LeadRepositoryProtocol(Protocol):
         ...
 
     def create(
-        self,
-        ia_id: int,
-        phone: str,
-        name: str,
-        message: List[Dict[str, Any]]
+        self, ia_id: int, phone: str, name: str, message: List[Dict[str, Any]]
     ) -> Lead:
         """Cria um novo lead."""
         ...
@@ -47,10 +44,7 @@ class LeadRepositoryProtocol(Protocol):
         ...
 
     def update_with_response(
-        self,
-        lead: Lead,
-        response: Dict[str, Any],
-        resume: Optional[str] = None
+        self, lead: Lead, response: Dict[str, Any], resume: Optional[str] = None
     ) -> None:
         """Atualiza lead com resposta da IA e opcionalmente com resumo."""
         ...
@@ -59,19 +53,15 @@ class LeadRepositoryProtocol(Protocol):
 class CacheProtocol(Protocol):
     """Contrato para serviço de cache."""
 
-    def get(self, key: str) -> Optional[dict]:
+    def get(self, key: str) -> Optional[str]:
         """Recupera valor do cache."""
         ...
 
-    def set(self, key: str, value: dict, ttl: int = 3600) -> None:
-        """Armazena valor no cache."""
+    def set(self, key: str, value: str, ttl: Optional[int] = None) -> bool:
+        """Armazena valor no cache com TTL opcional."""
         ...
 
-    def delete(self, key: str) -> None:
-        """Remove chave do cache."""
-        ...
-
-    def invalidate_by_prefix(self, prefix: str) -> None:
+    def invalidate_cache(self, prefix: str) -> None:
         """Remove todas as chaves com determinado prefixo."""
         ...
 
@@ -79,12 +69,6 @@ class CacheProtocol(Protocol):
 class MessageSenderProtocol(Protocol):
     """Contrato para serviço de envio de mensagens."""
 
-    def send(
-        self,
-        instance: str,
-        phone: str,
-        message: str,
-        delay: int = 0
-    ) -> None:
+    def send(self, instance: str, phone: str, message: str, delay: int = 0) -> None:
         """Envia mensagem para o número especificado."""
         ...

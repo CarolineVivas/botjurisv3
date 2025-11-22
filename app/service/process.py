@@ -6,17 +6,18 @@ gerenciar leads, gerar respostas da IA e enviar mensagens.
 """
 
 import json
-from typing import Dict, Any, Tuple, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
+
 from sqlalchemy.orm import Session
 
 from app.apis.evolution import send_message
 from app.core.distributed_lock import DistributedLock
 from app.core.logger_config import get_logger
-from app.database.repositories import IARepository, LeadRepository
 from app.database.models import IA, Lead
+from app.database.repositories import IARepository, LeadRepository
 from app.schemas.webhook import WebhookPayload
 from app.service.llm_response import IAresponse
-from app.service.quebra_mensagem import quebrar_mensagens, calculate_typing_delay
+from app.service.quebra_mensagem import calculate_typing_delay, quebrar_mensagens
 from app.service.sanitize import sanitize_dict
 
 log = get_logger()
@@ -34,10 +35,7 @@ class WebhookProcessor:
     """
 
     def __init__(
-        self,
-        db: Session,
-        ia_repository: IARepository,
-        lead_repository: LeadRepository
+        self, db: Session, ia_repository: IARepository, lead_repository: LeadRepository
     ):
         """
         Inicializa o processor com repositories injetados.
@@ -79,7 +77,7 @@ class WebhookProcessor:
                 payload.instance,
                 payload.data.key.id,
                 payload.data.messageType,
-                ia
+                ia,
             )
 
             if not message_text:
@@ -103,7 +101,7 @@ class WebhookProcessor:
                     instance=payload.instance,
                     lead_phone=lead_phone,
                     lead_name=lead_name,
-                    message_text=message_text
+                    message_text=message_text,
                 )
 
             log.success("✅ Webhook processado com sucesso")
@@ -141,7 +139,7 @@ class WebhookProcessor:
         instance: str,
         message_id: str,
         message_type: str,
-        ia: IA
+        ia: IA,
     ) -> str:
         """
         Extrai o conteúdo da mensagem baseado no tipo.
@@ -190,12 +188,7 @@ class WebhookProcessor:
         return ""
 
     def _process_with_lock(
-        self,
-        ia: IA,
-        instance: str,
-        lead_phone: str,
-        lead_name: str,
-        message_text: str
+        self, ia: IA, instance: str, lead_phone: str, lead_name: str, message_text: str
     ) -> None:
         """
         Processa a mensagem dentro da seção crítica (com lock).
@@ -209,18 +202,12 @@ class WebhookProcessor:
         """
         # 1. Gerenciar lead
         lead = self._get_or_create_lead(
-            ia=ia,
-            phone=lead_phone,
-            name=lead_name,
-            message_text=message_text
+            ia=ia, phone=lead_phone, name=lead_name, message_text=message_text
         )
 
         # 2. Gerar resposta da IA
         resposta_ia, historico = self._generate_ia_response(
-            ia=ia,
-            message_text=message_text,
-            history=lead.message,
-            resume=lead.resume
+            ia=ia, message_text=message_text, history=lead.message, resume=lead.resume
         )
 
         # 3. Enviar resposta
@@ -231,9 +218,7 @@ class WebhookProcessor:
         log.info(f"📊 Total de interações: {total_interacoes}")
 
         resumo = self._generate_resume_if_needed(
-            total_interacoes=total_interacoes,
-            historico=historico,
-            ia=ia
+            total_interacoes=total_interacoes, historico=historico, ia=ia
         )
 
         # 5. Atualizar lead
@@ -245,11 +230,7 @@ class WebhookProcessor:
         log.success(f"✅ Lead {lead.name} processado com sucesso")
 
     def _get_or_create_lead(
-        self,
-        ia: IA,
-        phone: str,
-        name: str,
-        message_text: str
+        self, ia: IA, phone: str, name: str, message_text: str
     ) -> Lead:
         """
         Busca ou cria um lead e adiciona a mensagem atual.
@@ -277,10 +258,7 @@ class WebhookProcessor:
         else:
             # Novo lead: criar com primeira mensagem
             lead = self.lead_repo.create(
-                ia_id=ia.id,
-                phone=phone,
-                name=name,
-                message=[mensagem_atual]
+                ia_id=ia.id, phone=phone, name=name, message=[mensagem_atual]
             )
             log.info(f"🆕 Novo lead criado: {name} ({phone})")
 
@@ -291,7 +269,7 @@ class WebhookProcessor:
         ia: IA,
         message_text: str,
         history: List[Dict[str, Any]],
-        resume: Optional[str]
+        resume: Optional[str],
     ) -> Tuple[str, List[Dict[str, Any]]]:
         """
         Gera resposta da IA.
@@ -361,10 +339,7 @@ class WebhookProcessor:
         return total
 
     def _generate_resume_if_needed(
-        self,
-        total_interacoes: int,
-        historico: List[Dict[str, Any]],
-        ia: IA
+        self, total_interacoes: int, historico: List[Dict[str, Any]], ia: IA
     ) -> Optional[str]:
         """
         Gera resumo se o número de interações atingiu um múltiplo de 20-25.
@@ -394,10 +369,7 @@ class WebhookProcessor:
         return None
 
     def _update_lead_with_response(
-        self,
-        lead: Lead,
-        resposta: str,
-        resumo: Optional[str]
+        self, lead: Lead, resposta: str, resumo: Optional[str]
     ) -> None:
         """
         Atualiza o lead com a resposta da IA e resumo.

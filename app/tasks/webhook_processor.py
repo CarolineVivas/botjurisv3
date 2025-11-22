@@ -1,9 +1,11 @@
 # app/tasks/webhook_processor.py
 import time
-from app.service.process import process_webhook_data
+
 from app.core.logger_config import get_logger
+from app.service.process import process_webhook_data
 
 log = get_logger()
+
 
 def process_webhook_task(payload: dict) -> str:
     """
@@ -22,4 +24,3 @@ def process_webhook_task(payload: dict) -> str:
         log.exception(f"❌ Falha ao processar webhook ({elapsed:.2f}s): {ex}")
         # raise para RQ registrar a falha e aplicar retry
         raise
-

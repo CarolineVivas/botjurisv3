@@ -1,8 +1,10 @@
 from fastapi import Request
 from fastapi.responses import JSONResponse
+
 from app.core.logger_config import get_logger
 
 logger = get_logger()
+
 
 async def error_handler(request: Request, call_next):
     """Middleware global para capturar exceções"""

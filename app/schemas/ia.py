@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class IAConfig(BaseModel):
     nome: str
     status: bool

@@ -5,11 +5,12 @@ Responsável por quebrar mensagens longas em partes menores,
 preservando formatação e aplicando delay de digitação.
 """
 
-import re
 import random
-from typing import List, Dict
-from app.core.logger_config import get_logger
+import re
+from typing import Dict, List
+
 from app.config.messages import MessageTemplates
+from app.core.logger_config import get_logger
 
 log = get_logger()
 
@@ -19,10 +20,10 @@ class MessageFormatter:
 
     # Padrões regex para proteção
     PATTERNS = {
-        'money': r'R\$\d{1,3}(?:\.\d{3})*,\d{2}',
-        'phone': r'\(\d{2}\)\s*\d{4,5}-\d{4,5}',
-        'special': r'([!?.]{2,})',
-        'list_item': r'^\s*(\d+\.\s+|-\s+)',
+        "money": r"R\$\d{1,3}(?:\.\d{3})*,\d{2}",
+        "phone": r"\(\d{2}\)\s*\d{4,5}-\d{4,5}",
+        "special": r"([!?.]{2,})",
+        "list_item": r"^\s*(\d+\.\s+|-\s+)",
     }
 
     def __init__(self):
@@ -40,13 +41,13 @@ class MessageFormatter:
             str: Texto com placeholders
         """
         # Proteger valores monetários
-        text = self._protect_pattern(text, 'VALOR', self.PATTERNS['money'])
+        text = self._protect_pattern(text, "VALOR", self.PATTERNS["money"])
 
         # Proteger telefones
-        text = self._protect_pattern(text, 'TELEFONE', self.PATTERNS['phone'])
+        text = self._protect_pattern(text, "TELEFONE", self.PATTERNS["phone"])
 
         # Proteger caracteres especiais
-        text = self._protect_pattern(text, 'ESPECIAL', self.PATTERNS['special'])
+        text = self._protect_pattern(text, "ESPECIAL", self.PATTERNS["special"])
 
         return text
 
@@ -80,7 +81,7 @@ class MessageFormatter:
         matches = re.findall(pattern, text)
 
         for i, match in enumerate(matches):
-            placeholder = f'<{prefix}_{i}>'
+            placeholder = f"<{prefix}_{i}>"
             self.placeholders[placeholder] = match
             text = text.replace(match, placeholder)
 
@@ -97,7 +98,7 @@ class MessageFormatter:
         Returns:
             bool: True se for item de lista
         """
-        return bool(re.match(MessageFormatter.PATTERNS['list_item'], text.strip()))
+        return bool(re.match(MessageFormatter.PATTERNS["list_item"], text.strip()))
 
 
 class MessageSplitter:
@@ -128,7 +129,7 @@ class MessageSplitter:
             protected_text = self.formatter.protect_patterns(text)
 
             # Dividir texto
-            lines = protected_text.split('\n')
+            lines = protected_text.split("\n")
             messages = []
 
             # Processar baseado em se há listas ou não
@@ -141,9 +142,7 @@ class MessageSplitter:
 
             # Restaurar padrões protegidos
             messages = [
-                self.formatter.restore_patterns(msg)
-                for msg in messages
-                if msg.strip()
+                self.formatter.restore_patterns(msg) for msg in messages if msg.strip()
             ]
 
             # Processar listas Markdown (adicionar mensagem antes de listas longas)
@@ -203,14 +202,17 @@ class MessageSplitter:
             List[str]: Mensagens processadas
         """
         # Dividir por sentenças simples (pontuação)
-        sentences = re.split(r'(?<=[.!?])\s+', text)
+        sentences = re.split(r"(?<=[.!?])\s+", text)
 
         messages = []
         current_message = ""
 
         for sentence in sentences:
             # Se adicionar essa sentença ultrapassar o limite, salvar mensagem atual
-            if len(current_message) + len(sentence) > self.max_length and current_message:
+            if (
+                len(current_message) + len(sentence) > self.max_length
+                and current_message
+            ):
                 messages.append(current_message.strip())
                 current_message = ""
 
@@ -266,6 +268,7 @@ class MessageSplitter:
 #  🔹 FUNÇÕES PÚBLICAS
 # ===============================================================
 
+
 def calculate_typing_delay(message: str) -> int:
     """
     Calcula delay de digitação baseado no tamanho da mensagem.
@@ -294,10 +297,7 @@ def calculate_typing_delay(message: str) -> int:
         return MessageTemplates.MAX_TYPING_DELAY_SECONDS
 
 
-def quebrar_mensagens(
-    texto: str,
-    max_length: int = None
-) -> List[str]:
+def quebrar_mensagens(texto: str, max_length: int = None) -> List[str]:
     """
     Função principal para quebrar mensagens longas.
 
