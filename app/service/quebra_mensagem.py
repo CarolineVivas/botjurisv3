@@ -4,12 +4,13 @@ import spacy
 from collections import defaultdict
 from spacy.symbols import ORTH
 from spacy.language import Language
+from app.core.logger_config import get_logger
 
 ...
 # Arquivo dedicado a qualquer manipulação de string e textos de todo sistema
 ...
 
-
+log = get_logger()
 nlp = spacy.load("pt_core_news_sm")
 
 def calculate_typing_delay(message:str) -> int:
@@ -25,7 +26,7 @@ def calculate_typing_delay(message:str) -> int:
         if typing_time_seconds > 10:
             typing_time_seconds = 10
     except Exception as ex:
-        print(f"Erro ao calcular delay de digitação: {ex}")
+        log.error(f"Erro ao calcular delay de digitação: {ex}", exc_info=True)
 
 
     return typing_time_seconds
@@ -162,11 +163,11 @@ def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
         for placeholder, valor in placeholders_valor.items():
             mensagens = [mensagem.replace(placeholder, valor) for mensagem in mensagens]
     except Exception as ex:
-        print(ex)
+        log.error(f"Erro ao quebrar mensagem: {ex}", exc_info=True)
         mensagens.append(texto)
 
     if mensagens:
-        print(f"A mensagem foi quebrada em {len(mensagens)} partes.")
+        log.debug(f"A mensagem foi quebrada em {len(mensagens)} partes.")
 
         # verificar se existe alguma lista ou algo parecido
         mensagens = process_markdown_list(mensagens)

@@ -38,6 +38,9 @@ def decrypt_data(encrypted_str: str) -> dict:
 
 # 🔧 Teste rápido opcional (somente se rodar standalone)
 if __name__ == "__main__":
+    from app.core.logger_config import get_logger
+    log = get_logger()
+
     data_encrypted = encrypt_data({"teste": "teste"})
-    print("Criptografado:", data_encrypted)
-    print("Decriptado:", decrypt_data(data_encrypted))
+    log.info(f"Criptografado: {data_encrypted}")
+    log.info(f"Decriptado: {decrypt_data(data_encrypted)}")

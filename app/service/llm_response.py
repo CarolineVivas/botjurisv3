@@ -3,11 +3,13 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain.chains.conversation.base import ConversationChain
 from langchain.prompts import PromptTemplate
 from app.service.cache_service import get_cache, set_cache
+from app.core.logger_config import get_logger
 from os import getenv
 from dotenv import load_dotenv
 
 # ✅ Carrega variáveis do arquivo .env
 load_dotenv()
+log = get_logger()
 
 
 # ============================================================
@@ -22,7 +24,7 @@ def get_response_from_ai(user_message: str, user_id: str):
     # ✅ 1. Tenta recuperar do cache
     cached = get_cache(cache_key)
     if cached:
-        print("♻️ Resposta carregada do cache")
+        log.debug("Resposta carregada do cache")
         return cached["response"]
 
     # 🚀 2. Caso não tenha cache, cria uma IA e gera nova resposta
@@ -50,7 +52,7 @@ class IAresponse:
         self.system_prompt = system_prompt
 
         if resume_lead:
-            print("Resumo localizado")
+            log.info("Resumo localizado")
             response_prompt = """
             histórico da conversa:
             {history}
@@ -95,14 +97,14 @@ class IAresponse:
                     elif msg["role"] == "assistant":
                         conversation.memory.chat_memory.add_ai_message(msg.get("content") or "")
 
-            print(f"Total de interações: {len(history_message)}")
+            log.debug(f"Total de interações: {len(history_message)}")
             resposta = conversation.predict(input=message_lead)
-            print(f"Resposta IA: {resposta}")
+            log.info(f"Resposta IA: {resposta}")
 
             return resposta
 
         except Exception as ex:
-            print(f"Erro ao processar resposta: {ex}")
+            log.error(f"Erro ao processar resposta: {ex}", exc_info=True)
             return ""
 
     # ============================================================
@@ -144,11 +146,11 @@ class IAresponse:
                     elif msg["role"] == "assistant":
                         conversation.memory.chat_memory.add_ai_message(msg.get("content") or "")
 
-            print(f"Total de interações: {len(history_message)}")
+            log.debug(f"Total de interações: {len(history_message)}")
             resposta = conversation.predict(input=message)
-            print(f"Resumo IA: {resposta}")
+            log.info(f"Resumo IA: {resposta}")
 
             return resposta
         except Exception as ex:
-            print(f"Erro ao processar resumo: {ex}")
+            log.error(f"Erro ao processar resumo: {ex}", exc_info=True)
             return None

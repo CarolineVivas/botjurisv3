@@ -4,8 +4,10 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 from time import perf_counter
+from app.core.logger_config import get_logger
 
 load_dotenv()
+log = get_logger()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -33,4 +35,4 @@ def before_cursor_execute(conn, cursor, statement, parameters, context, executem
 @event.listens_for(engine, "after_cursor_execute")
 def after_cursor_execute(conn, cursor, statement, parameters, context, executemany):
     total = perf_counter() - conn.info['query_start_time'].pop(-1)
-    print(f"⏱️ Query executada em {total:.3f}s")
+    log.debug(f"Query executada em {total:.3f}s")

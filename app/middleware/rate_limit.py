@@ -20,12 +20,11 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self.request_log[client_ip] = recent_requests
 
         if len(recent_requests) >= self.max_requests:
+            from app.core.logger_config import get_logger
+            logger = get_logger()
+            logger.warning(f"Rate limit excedido para IP: {client_ip}")
             raise HTTPException(status_code=429, detail="Too many requests")
 
         self.request_log[client_ip].append(now)
         response = await call_next(request)
         return response
-
-        if len(recent_requests) >= self.max_requests:
-            print(f"🚫 Rate limit excedido para IP: {client_ip}")
-            raise HTTPException(status_code=429, detail="Too many requests")
