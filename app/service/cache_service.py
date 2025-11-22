@@ -1,7 +1,10 @@
-from app.core.cache import redis_client
 import json
 from typing import Optional
 
+from app.core.cache import redis_client
+from app.core.logger_config import get_logger
+
+log = get_logger()
 CACHE_EXPIRATION = 3600  # ⏱️ 1 hora padrão
 
 
@@ -15,7 +18,7 @@ def set_cache(key: str, value: dict, expire_seconds: int = CACHE_EXPIRATION) -> 
     try:
         redis_client.setex(key, expire_seconds, json.dumps(value))
     except Exception as e:
-        print(f"⚠️ Erro ao salvar no cache ({key}): {e}")
+        log.error(f"Erro ao salvar no cache ({key}): {e}")
 
 
 def get_cache(key: str) -> Optional[dict]:
@@ -28,7 +31,7 @@ def get_cache(key: str) -> Optional[dict]:
             return json.loads(data)
         return None
     except Exception as e:
-        print(f"⚠️ Erro ao ler do cache ({key}): {e}")
+        log.error(f"Erro ao ler do cache ({key}): {e}")
         return None
 
 
@@ -39,7 +42,7 @@ def delete_cache(key: str) -> None:
     try:
         redis_client.delete(key)
     except Exception as e:
-        print(f"⚠️ Erro ao deletar chave do cache ({key}): {e}")
+        log.error(f"Erro ao deletar chave do cache ({key}): {e}")
 
 
 def clear_all_cache() -> None:
@@ -48,9 +51,9 @@ def clear_all_cache() -> None:
         return
     try:
         redis_client.flushall()
-        print("🧹 Cache limpo com sucesso!")
+        log.info("Cache limpo com sucesso!")
     except Exception as e:
-        print(f"⚠️ Erro ao limpar cache: {e}")
+        log.error(f"Erro ao limpar cache: {e}")
 
 
 # ============================================================

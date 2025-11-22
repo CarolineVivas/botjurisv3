@@ -1,23 +1,14 @@
 import json
-from typing import Dict, Any
+from typing import Any, Dict
 
 from app.apis.evolution import send_message
+from app.core.distributed_lock import DistributedLock
 from app.core.logger_config import get_logger
 from app.database.manipulations import ia_manipulations, lead_manipulations
 from app.schemas.webhook import WebhookPayload
 from app.service.llm_response import IAresponse
-from app.service.quebra_mensagem import quebrar_mensagens, calculate_typing_delay
+from app.service.quebra_mensagem import calculate_typing_delay, quebrar_mensagens
 from app.service.sanitize import sanitize_dict
-
-from threading import Lock
-
-_locks = {}
-
-def get_phone_lock(phone: str):
-    """Retorna um lock exclusivo para cada número de telefone."""
-    if phone not in _locks:
-        _locks[phone] = Lock()
-    return _locks[phone]
 
 log = get_logger()
 
@@ -72,10 +63,10 @@ def process_webhook_data(data: Dict[str, Any]) -> None:
 
         log.info(f"👤 Lead: {lead_name} ({lead_phone})")
         log.info(f"💬 Mensagem recebida: {mensagem_texto}")
+        # 5️⃣ Seção crítica protegida por lock distribuído (concorrência)
 
-        # 5️⃣ Seção crítica protegida por lock (concorrência)
-        lock = get_phone_lock(lead_phone)
-        with lock:
+        lock_key = f"webhook_processing:{lead_phone}"
+        with DistributedLock(lock_key, timeout=30):
             lead_db = _gerenciar_lead(lead_phone, lead_name, ia_infos, mensagem_texto)
 
             # 6️⃣ Resposta da IA
@@ -95,7 +86,7 @@ def process_webhook_data(data: Dict[str, Any]) -> None:
 
             # 9️⃣ Gerar resumo quando necessário
             resumo = _gerar_resumo_periodico(total_interacoes, historico, ia_infos)
-            
+
             # 🔟 Atualizar lead com a resposta e o resumo
             _atualizar_lead_db(lead_db.id, resposta_ia, resumo)
 
@@ -108,6 +99,7 @@ def process_webhook_data(data: Dict[str, Any]) -> None:
 # ===============================================================
 #  🔹 FUNÇÕES INTERNAS (organização e clareza)
 # ===============================================================
+
 
 def _processar_conteudo(
     data: Dict[str, Any],

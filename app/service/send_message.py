@@ -1,24 +1,23 @@
 import requests
 
+from app.core.logger_config import get_logger
+
+log = get_logger()
+
+
 def enviar_mensagem(apikey: str, numero_destino: str, mensagem: str):
     """
     Envia mensagem de texto usando a API da Evolution.
     """
-    url = "https://api.evolution.com/send-message"  # Substitua se for outro endpoint real da Evolution
+    url = "https://evolution-evolution-api.3r9t5q.easypanel.host/"  # Substitua se for outro endpoint real da Evolution
 
-    headers = {
-        "Content-Type": "application/json"
-    }
+    headers = {"Content-Type": "application/json"}
 
-    payload = {
-        "apikey": apikey,
-        "number": numero_destino,
-        "text": mensagem
-    }
+    payload = {"apikey": apikey, "number": numero_destino, "text": mensagem}
 
     try:
         response = requests.post(url, json=payload, headers=headers)
         response.raise_for_status()
-        print(f"[✓] Mensagem enviada para {numero_destino}")
+        log.info(f"Mensagem enviada para {numero_destino}")
     except requests.exceptions.RequestException as e:
-        print(f"[x] Erro ao enviar mensagem: {e}")
+        log.error(f"Erro ao enviar mensagem: {e}")

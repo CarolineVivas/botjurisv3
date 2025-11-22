@@ -1,41 +1,45 @@
-import re
 import random
+import re
+
 import spacy
-from collections import defaultdict
-from spacy.symbols import ORTH
 from spacy.language import Language
+from spacy.symbols import ORTH
+
+from app.core.logger_config import get_logger
 
 ...
 # Arquivo dedicado a qualquer manipulação de string e textos de todo sistema
 ...
 
-
+log = get_logger()
 nlp = spacy.load("pt_core_news_sm")
 
-def calculate_typing_delay(message:str) -> int:
+
+def calculate_typing_delay(message: str) -> int:
     # Definir o tempo de digitação (palavras por minuto)
     typing_time_seconds = 10
     try:
         typing_speed_wpm = 75
         words = len(message.split())
-        typing_time = words / typing_speed_wpm # time in minutes
-        typing_time_seconds = typing_time * 30 # convert to seconds
-        
+        typing_time = words / typing_speed_wpm  # time in minutes
+        typing_time_seconds = typing_time * 30  # convert to seconds
+
         typing_time_seconds = round(typing_time_seconds)
         if typing_time_seconds > 10:
             typing_time_seconds = 10
     except Exception as ex:
-        print(f"Erro ao calcular delay de digitação: {ex}")
-
+        log.error(f"Erro ao calcular delay de digitação: {ex}", exc_info=True)
 
     return typing_time_seconds
+
 
 # Identifica se o trecho do texto é uma lista ou um bullet
 def identificar_topo_lista(line):
     """
     Função para identificar se a linha é um item de lista numerada ou com bullets.
     """
-    return re.match(r'^\d+\.\s+|[-*]\s+)', line.strip()) is not None
+    return re.match(r"^\d+\.\s+|[-*]\s+)", line.strip()) is not None
+
 
 @Language.component("set_custom_boundaries")
 def set_custom_boundaries(doc):
@@ -48,17 +52,29 @@ def set_custom_boundaries(doc):
             doc[token.i].is_sent_start = False
     return doc
 
+
 def ajustar_sentencizer(nlp):
     """
     Adiciona abreviações personalizadas ao tokenizer e insere o componente de limies.
     """
-    abbreviations = [".", "Dr.", "Dra.", "Sr.", "Sra.", "Prof.", "Profª.", "Drª.", "Srta."]
+    abbreviations = [
+        ".",
+        "Dr.",
+        "Dra.",
+        "Sr.",
+        "Sra.",
+        "Prof.",
+        "Profª.",
+        "Drª.",
+        "Srta.",
+    ]
     for abbr in abbreviations:
         nlp.tokenizer.add_special_case(abbr, [(ORTH, abbr)])
 
     # Adicionar o componente personalizado ao pipeline do spaCy
     if "set_custom_boundaries" not in nlp.pipe_names:
         nlp.add_pipe("set_custom_boundaries", before="parser")
+
 
 def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
     """
@@ -80,38 +96,40 @@ def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
     try:
 
         # 1. Identificar e Proteger os Valores Monetários
-        padrao_valor = r'R\$\d{1,3}(?:\.\d{3})*,\d{2})'
+        padrao_valor = r"R\$\d{1,3}(?:\.\d{3})*,\d{2})"
         valores = re.findall(padrao_valor, texto)
         placeholders_valor = {}
         for i, valor in enumerate(valores):
-            placeholder = f'<VALOR_{i}>'
+            placeholder = f"<VALOR_{i}>"
             placeholders_valor[placeholder] = valor
             texto = texto.replace(valor, placeholder)
-            
+
         # 2. Identificar e Proteger os Números de Telefone
-        padrao_telefone = r'\(\d{2}\)\s*\d{4,5}-\d{4,5}'
+        padrao_telefone = r"\(\d{2}\)\s*\d{4,5}-\d{4,5}"
         telefones = re.findall(padrao_telefone, texto)
         placeholders_telefone = {}
-        for i, telefone in enumerate(telefones):    
-            placeholder = f'<TELEFONE_{i}>'
+        for i, telefone in enumerate(telefones):
+            placeholder = f"<TELEFONE_{i}>"
             placeholders_telefone[placeholder] = telefone
             texto = texto.replace(telefone, placeholder)
-            
+
         # 3. Identificar e Proteger Sequências de Caracteres Especiais
-        padrao_especiais = r'([!?.]{2,})'
+        padrao_especiais = r"([!?.]{2,})"
         especiais = re.findall(padrao_especiais, texto)
         placeholders_especiais = {}
         for i, especial in enumerate(especiais):
-            placeholder = f'<ESPECIAIS_{i}>'
+            placeholder = f"<ESPECIAIS_{i}>"
             placeholders_especiais[placeholder] = especial
             texto = texto.replace(especial, placeholder)
 
         # 4. Inserir Quebras de Linha antes de Itens de Lista Numerada ou com Bullets
         # Inserir '\n' antes de 'number. ' ou '- ' ou '* ' apenas no início das linhas
-        texto = re.sub(r'(?<!\n)(^\d+\.\s+|^[-*]\s+)', r'\n\1', texto, flags=re.MULTILINE)
+        texto = re.sub(
+            r"(?<!\n)(^\d+\.\s+|^[-*]\s+)", r"\n\1", texto, flags=re.MULTILINE
+        )
 
         #  Dividir o texto em linhas para verificar listas numeradas ou com bullets
-        lines = texto.split('\n')
+        lines = texto.split("\n")
 
         contains_markdown_list = any(identificar_topo_lista(line) for line in lines)
 
@@ -120,7 +138,7 @@ def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
             for line in lines:
                 line = line.strip()
                 if not line:
-                    continue # Ignora linhas vazias
+                    continue  # Ignora linhas vazias
                 if identificar_topo_lista(line):
                     # Se estamos iniciando um novo item de lista de nível superior
                     # Adicionar a mensagem atual se existir
@@ -152,35 +170,40 @@ def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
 
         # 6. Restaurar as Sequências de Caracteres Especiais
         for placeholder, especial in placeholders_especiais.items():
-            mensagens = [mensagem.replace(placeholder, especial) for mensagem in mensagens]
+            mensagens = [
+                mensagem.replace(placeholder, especial) for mensagem in mensagens
+            ]
 
         # 7. Restaurar os Números de Telefone
         for placeholder, telefone in placeholders_telefone.items():
-            mensagens = [mensagem.replace(placeholder, telefone) for mensagem in mensagens]
+            mensagens = [
+                mensagem.replace(placeholder, telefone) for mensagem in mensagens
+            ]
 
         # 8. Restaurar os Valores Monetários
         for placeholder, valor in placeholders_valor.items():
             mensagens = [mensagem.replace(placeholder, valor) for mensagem in mensagens]
     except Exception as ex:
-        print(ex)
+        log.error(f"Erro ao quebrar mensagem: {ex}", exc_info=True)
         mensagens.append(texto)
 
     if mensagens:
-        print(f"A mensagem foi quebrada em {len(mensagens)} partes.")
+        log.debug(f"A mensagem foi quebrada em {len(mensagens)} partes.")
 
         # verificar se existe alguma lista ou algo parecido
         mensagens = process_markdown_list(mensagens)
 
     return mensagens
 
-def is_list_item(item:str) -> bool:
+
+def is_list_item(item: str) -> bool:
     """
     Verifica se o item é um elemento de lista Markdown.
     Aceita itens que iniciam com:
         - Um número (com ou sem zeros à esquerda) seguido de ponto e espaço, por exemplo: "1. ", "01. "
         - Ou com "-" seguido de espaço, por exemplo: "- "
     """
-    return bool(re.match(r'^\s*(\d+\.\s+|-)\s*', item))
+    return bool(re.match(r"^\s*(\d+\.\s+|-)\s*", item))
 
 
 def process_markdown_list(items):
@@ -227,9 +250,9 @@ def process_markdown_list(items):
                     "Aguarde um pouquinho, estou finalizando os detalhes",
                     "Só um instante, já tenho as informações para você",
                     "Dê-me um minutinho, estou juntando todas as informações",
-                    "Por favor, aguarde um momento enquanto preparo os dados"
+                    "Por favor, aguarde um momento enquanto preparo os dados",
                 ]
-            
+
                 mensagem_escolhida = random.choice(pre_list)
 
                 result.append(mensagem_escolhida)
@@ -239,8 +262,5 @@ def process_markdown_list(items):
             i = j
         else:
             result.append(items[i])
-            i += 1  
+            i += 1
     return result
-
-
-    
