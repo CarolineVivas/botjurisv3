@@ -1,247 +1,312 @@
+"""
+Serviço de quebra e formatação de mensagens.
+
+Responsável por quebrar mensagens longas em partes menores,
+preservando formatação e aplicando delay de digitação.
+"""
+
 import re
 import random
-import spacy
-from collections import defaultdict
-from spacy.symbols import ORTH
-from spacy.language import Language
+from typing import List, Dict
 from app.core.logger_config import get_logger
-
-...
-# Arquivo dedicado a qualquer manipulação de string e textos de todo sistema
-...
+from app.config.messages import MessageTemplates
 
 log = get_logger()
-nlp = spacy.load("pt_core_news_sm")
-
-def calculate_typing_delay(message:str) -> int:
-    # Definir o tempo de digitação (palavras por minuto)
-    typing_time_seconds = 10
-    try:
-        typing_speed_wpm = 75
-        words = len(message.split())
-        typing_time = words / typing_speed_wpm # time in minutes
-        typing_time_seconds = typing_time * 30 # convert to seconds
-        
-        typing_time_seconds = round(typing_time_seconds)
-        if typing_time_seconds > 10:
-            typing_time_seconds = 10
-    except Exception as ex:
-        log.error(f"Erro ao calcular delay de digitação: {ex}", exc_info=True)
 
 
-    return typing_time_seconds
+class MessageFormatter:
+    """Formatador de mensagens com proteção de padrões especiais."""
 
-# Identifica se o trecho do texto é uma lista ou um bullet
-def identificar_topo_lista(line):
+    # Padrões regex para proteção
+    PATTERNS = {
+        'money': r'R\$\d{1,3}(?:\.\d{3})*,\d{2}',
+        'phone': r'\(\d{2}\)\s*\d{4,5}-\d{4,5}',
+        'special': r'([!?.]{2,})',
+        'list_item': r'^\s*(\d+\.\s+|-\s+)',
+    }
+
+    def __init__(self):
+        """Inicializa o formatador."""
+        self.placeholders: Dict[str, str] = {}
+
+    def protect_patterns(self, text: str) -> str:
+        """
+        Protege padrões especiais substituindo-os por placeholders.
+
+        Args:
+            text: Texto original
+
+        Returns:
+            str: Texto com placeholders
+        """
+        # Proteger valores monetários
+        text = self._protect_pattern(text, 'VALOR', self.PATTERNS['money'])
+
+        # Proteger telefones
+        text = self._protect_pattern(text, 'TELEFONE', self.PATTERNS['phone'])
+
+        # Proteger caracteres especiais
+        text = self._protect_pattern(text, 'ESPECIAL', self.PATTERNS['special'])
+
+        return text
+
+    def restore_patterns(self, text: str) -> str:
+        """
+        Restaura os padrões protegidos.
+
+        Args:
+            text: Texto com placeholders
+
+        Returns:
+            str: Texto original restaurado
+        """
+        for placeholder, original in self.placeholders.items():
+            text = text.replace(placeholder, original)
+
+        return text
+
+    def _protect_pattern(self, text: str, prefix: str, pattern: str) -> str:
+        """
+        Protege um padrão específico.
+
+        Args:
+            text: Texto original
+            prefix: Prefixo do placeholder
+            pattern: Regex pattern
+
+        Returns:
+            str: Texto com placeholders
+        """
+        matches = re.findall(pattern, text)
+
+        for i, match in enumerate(matches):
+            placeholder = f'<{prefix}_{i}>'
+            self.placeholders[placeholder] = match
+            text = text.replace(match, placeholder)
+
+        return text
+
+    @staticmethod
+    def is_list_item(text: str) -> bool:
+        """
+        Verifica se o texto é um item de lista.
+
+        Args:
+            text: Texto a verificar
+
+        Returns:
+            bool: True se for item de lista
+        """
+        return bool(re.match(MessageFormatter.PATTERNS['list_item'], text.strip()))
+
+
+class MessageSplitter:
+    """Divide mensagens longas em partes menores."""
+
+    def __init__(self, max_length: int = None):
+        """
+        Inicializa o divisor.
+
+        Args:
+            max_length: Tamanho máximo da mensagem (usa default do config se não especificado)
+        """
+        self.max_length = max_length or MessageTemplates.MAX_MESSAGE_LENGTH
+        self.formatter = MessageFormatter()
+
+    def split(self, text: str) -> List[str]:
+        """
+        Divide mensagem em partes menores.
+
+        Args:
+            text: Texto a ser dividido
+
+        Returns:
+            List[str]: Lista de mensagens divididas
+        """
+        try:
+            # Proteger padrões especiais
+            protected_text = self.formatter.protect_patterns(text)
+
+            # Dividir texto
+            lines = protected_text.split('\n')
+            messages = []
+
+            # Processar baseado em se há listas ou não
+            has_lists = any(self.formatter.is_list_item(line) for line in lines)
+
+            if has_lists:
+                messages = self._process_with_lists(lines)
+            else:
+                messages = self._process_simple(protected_text)
+
+            # Restaurar padrões protegidos
+            messages = [
+                self.formatter.restore_patterns(msg)
+                for msg in messages
+                if msg.strip()
+            ]
+
+            # Processar listas Markdown (adicionar mensagem antes de listas longas)
+            messages = self._process_markdown_lists(messages)
+
+            log.debug(f"Mensagem quebrada em {len(messages)} partes")
+
+            return messages
+
+        except Exception as ex:
+            log.error(f"Erro ao quebrar mensagem: {ex}", exc_info=True)
+            return [text]  # Retorna texto original em caso de erro
+
+    def _process_with_lists(self, lines: List[str]) -> List[str]:
+        """
+        Processa texto contendo listas.
+
+        Args:
+            lines: Linhas do texto
+
+        Returns:
+            List[str]: Mensagens processadas
+        """
+        messages = []
+        current_message = ""
+
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+
+            if self.formatter.is_list_item(line):
+                # Salvar mensagem atual se existir
+                if current_message:
+                    messages.append(current_message.strip())
+                    current_message = ""
+
+                # Adicionar item da lista como mensagem separada
+                messages.append(line)
+            else:
+                current_message += line + " "
+
+        # Adicionar mensagem final se existir
+        if current_message:
+            messages.append(current_message.strip())
+
+        return messages
+
+    def _process_simple(self, text: str) -> List[str]:
+        """
+        Processa texto simples (sem listas).
+
+        Args:
+            text: Texto a processar
+
+        Returns:
+            List[str]: Mensagens processadas
+        """
+        # Dividir por sentenças simples (pontuação)
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+
+        messages = []
+        current_message = ""
+
+        for sentence in sentences:
+            # Se adicionar essa sentença ultrapassar o limite, salvar mensagem atual
+            if len(current_message) + len(sentence) > self.max_length and current_message:
+                messages.append(current_message.strip())
+                current_message = ""
+
+            current_message += sentence + " "
+
+        # Adicionar mensagem final
+        if current_message:
+            messages.append(current_message.strip())
+
+        return messages
+
+    def _process_markdown_lists(self, messages: List[str]) -> List[str]:
+        """
+        Processa listas Markdown, adicionando mensagem antes de listas longas.
+
+        Args:
+            messages: Mensagens originais
+
+        Returns:
+            List[str]: Mensagens processadas com avisos de lista
+        """
+        result = []
+        i = 0
+
+        while i < len(messages):
+            if self.formatter.is_list_item(messages[i]):
+                # Coletar todos os itens consecutivos da lista
+                list_items = [messages[i]]
+                j = i + 1
+
+                while j < len(messages) and self.formatter.is_list_item(messages[j]):
+                    list_items.append(messages[j])
+                    j += 1
+
+                # Se lista tem mais de 3 itens, adicionar mensagem de aviso
+                if len(list_items) > MessageTemplates.MIN_LIST_ITEMS_FOR_PRE_MESSAGE:
+                    pre_message = random.choice(MessageTemplates.PRE_LIST_MESSAGES)
+                    result.append(pre_message)
+
+                # Concatenar itens da lista
+                combined = "\n".join(list_items).replace("**", "*")
+                result.append(combined)
+
+                i = j
+            else:
+                result.append(messages[i])
+                i += 1
+
+        return result
+
+
+# ===============================================================
+#  🔹 FUNÇÕES PÚBLICAS
+# ===============================================================
+
+def calculate_typing_delay(message: str) -> int:
     """
-    Função para identificar se a linha é um item de lista numerada ou com bullets.
-    """
-    return re.match(r'^\d+\.\s+|[-*]\s+)', line.strip()) is not None
-
-@Language.component("set_custom_boundaries")
-def set_custom_boundaries(doc):
-    """
-    Componente personalizado para definir os limites de sentença após abreviações.
-    """
-    abbreviations = ["Sr.", "Sra.", "Dr.", "Dra.", "Prof.", "Profa.", "Srta."]
-    for token in doc[:-1]:
-        if token.text in abbreviations and doc[token.i + 1].is_title:
-            doc[token.i].is_sent_start = False
-    return doc
-
-def ajustar_sentencizer(nlp):
-    """
-    Adiciona abreviações personalizadas ao tokenizer e insere o componente de limies.
-    """
-    abbreviations = [".", "Dr.", "Dra.", "Sr.", "Sra.", "Prof.", "Profª.", "Drª.", "Srta."]
-    for abbr in abbreviations:
-        nlp.tokenizer.add_special_case(abbr, [(ORTH, abbr)])
-
-    # Adicionar o componente personalizado ao pipeline do spaCy
-    if "set_custom_boundaries" not in nlp.pipe_names:
-        nlp.add_pipe("set_custom_boundaries", before="parser")
-
-def quebrar_mensagens(texto: str, probabilidade_quebra: float = 0.5) -> list:
-    """
-    Função para quebrar mensagens longas em mensagens menores,
-    preservando padrões como números de telefone, valores monetários,
-    abreviações e listas numeradas.
+    Calcula delay de digitação baseado no tamanho da mensagem.
 
     Args:
-        texto (str): Texto completo a ser segmentado.
-        probabilidade_quebra (float): Probabilidade de inserção de quebra de linha.
+        message: Mensagem a ser enviada
 
     Returns:
-        list: Lista de mensagens segmentadas.
+        int: Delay em segundos (máximo 10s)
     """
-
-    mensagens = []
-    mensagem_atual = ""
-
     try:
+        words = len(message.split())
+        typing_time = words / MessageTemplates.TYPING_SPEED_WPM  # minutos
+        typing_time_seconds = typing_time * MessageTemplates.TYPING_DELAY_MULTIPLIER
 
-        # 1. Identificar e Proteger os Valores Monetários
-        padrao_valor = r'R\$\d{1,3}(?:\.\d{3})*,\d{2})'
-        valores = re.findall(padrao_valor, texto)
-        placeholders_valor = {}
-        for i, valor in enumerate(valores):
-            placeholder = f'<VALOR_{i}>'
-            placeholders_valor[placeholder] = valor
-            texto = texto.replace(valor, placeholder)
-            
-        # 2. Identificar e Proteger os Números de Telefone
-        padrao_telefone = r'\(\d{2}\)\s*\d{4,5}-\d{4,5}'
-        telefones = re.findall(padrao_telefone, texto)
-        placeholders_telefone = {}
-        for i, telefone in enumerate(telefones):    
-            placeholder = f'<TELEFONE_{i}>'
-            placeholders_telefone[placeholder] = telefone
-            texto = texto.replace(telefone, placeholder)
-            
-        # 3. Identificar e Proteger Sequências de Caracteres Especiais
-        padrao_especiais = r'([!?.]{2,})'
-        especiais = re.findall(padrao_especiais, texto)
-        placeholders_especiais = {}
-        for i, especial in enumerate(especiais):
-            placeholder = f'<ESPECIAIS_{i}>'
-            placeholders_especiais[placeholder] = especial
-            texto = texto.replace(especial, placeholder)
+        typing_time_seconds = round(typing_time_seconds)
 
-        # 4. Inserir Quebras de Linha antes de Itens de Lista Numerada ou com Bullets
-        # Inserir '\n' antes de 'number. ' ou '- ' ou '* ' apenas no início das linhas
-        texto = re.sub(r'(?<!\n)(^\d+\.\s+|^[-*]\s+)', r'\n\1', texto, flags=re.MULTILINE)
+        # Limitar ao máximo configurado
+        if typing_time_seconds > MessageTemplates.MAX_TYPING_DELAY_SECONDS:
+            typing_time_seconds = MessageTemplates.MAX_TYPING_DELAY_SECONDS
 
-        #  Dividir o texto em linhas para verificar listas numeradas ou com bullets
-        lines = texto.split('\n')
+        return typing_time_seconds
 
-        contains_markdown_list = any(identificar_topo_lista(line) for line in lines)
-
-        if contains_markdown_list:
-            # Processamento linha por linha para textos com listas numeradas ou com bullets
-            for line in lines:
-                line = line.strip()
-                if not line:
-                    continue # Ignora linhas vazias
-                if identificar_topo_lista(line):
-                    # Se estamos iniciando um novo item de lista de nível superior
-                    # Adicionar a mensagem atual se existir
-                    if mensagem_atual:
-                        mensagens.append(mensagem_atual.strip())
-                        mensagem_atual = ""
-                    # Adicionar o item da lista como uma mensagem separada
-                    mensagens.append(line)
-                else:
-                    # Acumular texto não pertencente a listas
-                    mensagem_atual += line + " "
-            # Após processar todas as linhas, adicionar a mensagem atual
-            if mensagem_atual:
-                mensagens.append(mensagem_atual.strip())
-        else:
-            # 5. Processamento por sentenças usando spaCy para textos comuns
-            ajustar_sentencizer(nlp)
-            doc = nlp(texto)
-            for sent in doc.sents:
-                mensagem_atual += sent.text.strip() + " "
-                # Decidir aleatoriamente se quebra aqui:
-                if random.random() < probabilidade_quebra:
-                    mensagens.append(mensagem_atual.strip())
-                    mensagem_atual = ""
-
-            # Adicionar o restante do texto, se houver
-            if mensagem_atual:
-                mensagens.append(mensagem_atual.strip())
-
-        # 6. Restaurar as Sequências de Caracteres Especiais
-        for placeholder, especial in placeholders_especiais.items():
-            mensagens = [mensagem.replace(placeholder, especial) for mensagem in mensagens]
-
-        # 7. Restaurar os Números de Telefone
-        for placeholder, telefone in placeholders_telefone.items():
-            mensagens = [mensagem.replace(placeholder, telefone) for mensagem in mensagens]
-
-        # 8. Restaurar os Valores Monetários
-        for placeholder, valor in placeholders_valor.items():
-            mensagens = [mensagem.replace(placeholder, valor) for mensagem in mensagens]
     except Exception as ex:
-        log.error(f"Erro ao quebrar mensagem: {ex}", exc_info=True)
-        mensagens.append(texto)
+        log.error(f"Erro ao calcular delay de digitação: {ex}", exc_info=True)
+        return MessageTemplates.MAX_TYPING_DELAY_SECONDS
 
-    if mensagens:
-        log.debug(f"A mensagem foi quebrada em {len(mensagens)} partes.")
 
-        # verificar se existe alguma lista ou algo parecido
-        mensagens = process_markdown_list(mensagens)
-
-    return mensagens
-
-def is_list_item(item:str) -> bool:
+def quebrar_mensagens(
+    texto: str,
+    max_length: int = None
+) -> List[str]:
     """
-    Verifica se o item é um elemento de lista Markdown.
-    Aceita itens que iniciam com:
-        - Um número (com ou sem zeros à esquerda) seguido de ponto e espaço, por exemplo: "1. ", "01. "
-        - Ou com "-" seguido de espaço, por exemplo: "- "
+    Função principal para quebrar mensagens longas.
+
+    Args:
+        texto: Texto completo a ser segmentado
+        max_length: Tamanho máximo da mensagem (opcional)
+
+    Returns:
+        List[str]: Lista de mensagens segmentadas
     """
-    return bool(re.match(r'^\s*(\d+\.\s+|-)\s*', item))
-
-
-def process_markdown_list(items):
-    """
-    Percorre a lista de strings e concatena em uma única string
-    os itens consecutivos que seguem o padrão de lista Markdown.
-    Durante a concatenação, todas as ocorrências de "**" são substituídas por "*".
-
-    Se for encontrada uma sequência com mais de 3 itens de lista,
-    insere, um índice antes dessa sequência, a mensagem:
-    "Um minutinho que irei te passar as informações".
-
-    O item concatenado substitui o primeiro item da sequência,
-    e os demais são removidos da lista final.
-    """
-    result = []
-    i = 0
-    while i < len(items):
-        if is_list_item(items[i]):
-            block_items = [items[i]]
-            j = i + 1
-            while j < len(items) and is_list_item(items[j]):
-                block_items.append(items[j])
-                j += 1
-            # Se o bloco possiuir mais de 3 itens, insere a mensagem do bloco concatenado
-            if len(block_items) > 3:
-                pre_list = [
-                    "Um minutinho que irei te passar as informações",
-                    "Só um instante, vou buscar as informações para você",
-                    "Aguarde um pouquinho, estou reunindo os dados",
-                    "Um momento, logo trago os detalhes",
-                    "Espere só um instante enquanto preparo as informações",
-                    "Dá só um minuto, já estou organizando os dados para você",
-                    "Só um segundinho, já te passo as informações",
-                    "Por favor, aguarde um instante que estou separando os dados",
-                    "Um pouquinho de paciência, estou juntando os detalhes",
-                    "Aguarde um momento, estou coletando as informações",
-                    "Só mais um instante, estou preparando tudo para você",
-                    "Um instante, vou te mostrar as informações",
-                    "Dê-me um momento, estou buscando os dados necessários",
-                    "Aguarde só um minutinho, logo te passo os detalhes",
-                    "Só um momento, estou reunindo todos os dados",
-                    "Um segundinho, estou organizando as informações",
-                    "Aguarde um pouquinho, estou finalizando os detalhes",
-                    "Só um instante, já tenho as informações para você",
-                    "Dê-me um minutinho, estou juntando todas as informações",
-                    "Por favor, aguarde um momento enquanto preparo os dados"
-                ]
-            
-                mensagem_escolhida = random.choice(pre_list)
-
-                result.append(mensagem_escolhida)
-            # Concatena os itens com quebra de linha e substitui "**" por "*"
-            combined = "\n".join(block_items).replace("**", "*")
-            result.append(combined)
-            i = j
-        else:
-            result.append(items[i])
-            i += 1  
-    return result
-
-
-    
+    splitter = MessageSplitter(max_length)
+    return splitter.split(texto)
