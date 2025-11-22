@@ -1,13 +1,15 @@
+from typing import Dict, List
 from fastapi import Request, HTTPException
 from starlette.middleware.base import BaseHTTPMiddleware
 import time
+
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, max_requests: int = 10, window_seconds: int = 60):
         super().__init__(app)
         self.max_requests = max_requests
         self.window_seconds = window_seconds
-        self.request_log = {}
+        self.request_log: Dict[str, List[float]] = {}
 
     async def dispatch(self, request: Request, call_next):
         client_ip = request.client.host

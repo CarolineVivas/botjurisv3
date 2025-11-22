@@ -1,11 +1,12 @@
-from ..models import *
+from typing import Optional
+from ..models import Lead
 from ..connection import init_db
 from app.core.logger_config import get_logger
 
 log = get_logger()
 
 
-def filter_lead(phone: str, message: dict) -> Lead:
+def filter_lead(phone: str, message: dict) -> Optional[Lead]:
     db = init_db()
     if not db:
         raise(Exception("Não consegui conectar com database"))
@@ -31,12 +32,12 @@ def filter_lead(phone: str, message: dict) -> Lead:
 
     except Exception as ex:
         log.error(f"Erro ao filtrar lead: {ex}", exc_info=True)
+        return None
     finally:
         db.close()
 
-    return None
 
-def update_lead(lead_id:int, message:list, resume:str) -> bool:
+def update_lead(lead_id: int, message: list, resume: str) -> bool:
     db = init_db()
     if not db:
             raise(Exception("Não consegui conectar com database"))
@@ -45,7 +46,7 @@ def update_lead(lead_id:int, message:list, resume:str) -> bool:
         lead = db.query(Lead).filter(Lead.id == lead_id).first()
         if not lead:
             log.warning(f"Lead não localizado com esse ID {lead_id}")
-            return None
+            return False
 
         if resume:
             lead.resume = resume
@@ -65,12 +66,12 @@ def update_lead(lead_id:int, message:list, resume:str) -> bool:
 
     except Exception as ex:
         log.error(f"Erro ao atualizar lead: {ex}", exc_info=True)
+        return False
     finally:
         db.close()
 
-    return False   
 
-def new_lead(ia_id:int, phone:str, name:str, message:list) -> Lead:
+def new_lead(ia_id: int, phone: str, name: str, message: list) -> Optional[Lead]:
     db = init_db()
     if not db:
         raise(Exception("Não consegui conectar com database"))
@@ -93,7 +94,6 @@ def new_lead(ia_id:int, phone:str, name:str, message:list) -> Lead:
 
     except Exception as ex:
         log.error(f"Erro ao criar novo lead: {ex}", exc_info=True)
+        return None
     finally:
         db.close()
-
-    return None

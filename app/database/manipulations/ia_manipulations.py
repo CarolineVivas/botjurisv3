@@ -1,11 +1,12 @@
-from ..models import *
+from typing import Optional
+from ..models import IA
 from ..connection import SessionLocal
 from app.core.logger_config import get_logger
 
 log = get_logger()
 
 
-def filter_ia(phone:str) -> IA:
+def filter_ia(phone: str) -> Optional[IA]:
     db = SessionLocal()
 
     if not db:
@@ -26,6 +27,6 @@ def filter_ia(phone:str) -> IA:
 
     except Exception as ex:
         log.error(f"Erro ao filtrar IA: {ex}", exc_info=True)
-
+        return None
     finally:
         db.close()

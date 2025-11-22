@@ -97,7 +97,7 @@ class WebhookProcessor:
 
             # 5️⃣ Processar com lock distribuído
             lock_key = f"webhook_processing:{lead_phone}"
-            with DistributedLock(lock_key, timeout=30):
+            with DistributedLock(None, lock_key, ttl=30):
                 self._process_with_lock(
                     ia=ia,
                     instance=payload.instance,
